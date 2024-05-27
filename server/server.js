@@ -16,7 +16,12 @@ app.use(express.json());
 // cors allowed first
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: [
+      "https://sneakers-shoes.vercel.app",
+      "https://snekers-shoes-admin.vercel.app",
+      "http://localhost:3000",
+      "http://localhost:3001",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: [
       "Content-Type",
